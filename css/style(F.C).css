@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:#c1c3c53f;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin:0;
+	padding:0;
+	color: aliceblue;
+}
+
+#contenedor{
+	background-color: #10b9519a;
+	width:50%;
+	margin:0 auto;
+	padding:10px;
+}
+
+
+#contenedor h1{
+	font-size:24px;
+	text-align: center;
+}
+
+#contenedor #form{
+	margin-top:20px;
+}
+
+#form p{
+	width:100px;
+	margin-top: 20px;
+}
+
+input[type="text"], input[type="email"],input[type="url"], textarea{
+	margin-top: 2px;
+	width:100%;
+	padding-left:5px;
+	padding-right:5px;
+	height:40px;
+}
+textarea{
+	height: 150px;
+}
+input[type="text"]:focus , input[type="email"]:focus ,input[type="url"]:focus, textarea:focus{
+	outline:0 none;
+}
+
+input[type="submit"]{
+	display: block;
+	margin:15px auto;
+	width:120px;
+	height:40px;
+	border: 0;
+	color: white;
+	background: gray;
+	
+}
+	
+@media only screen and (max-width:980px){
+	#contenedor{
+		width:80%;
+		margin:0 auto;
+	}
+}
+
+@media only screen and (max-width:480px){
+	#contenedor{
+		width:98%;
+		margin:0 auto;
+		background: #443da8;
+	}
+	input[type="submit"]{
+		width: 100%;
+		background: black;
+	}
+}

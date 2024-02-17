@@ -1,0 +1,90 @@
+body{
+	font-family:Tahoma;
+	font-size:12px;
+	background: #e6dfdf;
+}
+
+#formulario{
+	background:#a5d6f1;
+	margin:0 auto;
+	width:600px;
+	padding:14px;
+}
+
+h1{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+
+
+#linea{
+	color:#666666;
+	margin-bottom:30px;
+	border-bottom:solid 1px #fff;
+	padding-bottom:5px;
+}
+
+#label{
+	display:block;
+	font-weight:bold;
+	width:240px;
+	font-size:12px;
+	margin: 10px;
+}
+#contenedorBotones {
+    margin-top: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 150px; 
+    margin: 10px 10px 0 90px; 
+}
+
+/* Estilos para dispositivos con ancho hasta 980px */
+@media screen and (max-width: 980px) {
+    #formulario {
+        width: 500px;
+        padding: 14px;
+        margin:0 auto;
+    }
+
+    #label {
+        width: 100%;
+        margin: 10px 0;
+    }
+	input[type="text"], input[type="email"] {
+		width: 80%;
+		box-sizing: border-box;
+	}
+
+    input[type="submit"], input[type="reset"] {
+        width: 120px;
+		margin: 10px 10px 0 15%;
+		padding: 8px;
+		font-size: 12px;
+    }
+
+    /* Estilos adicionales para dispositivos con ancho hasta 480px */
+    @media screen and (max-width: 480px) {
+        #formulario {
+            width: 95%;
+        }
+
+        #label {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 100px;
+            margin: 10px 10px 0 10%;
+            padding: 8px;
+			font-size: 12px;
+        }
+		input[type="text"], input[type="email"] {
+			width: 100%;
+			box-sizing: border-box;
+    	}
+	}
+}
